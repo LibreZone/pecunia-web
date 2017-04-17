@@ -36,7 +36,7 @@ export default {
     <div class="col-md-12" v-if="!options">
       <a @click.prevent="options = true">+ mais opções</a>
     </div>
-    <div class="col-md-12" v-if="options">
+    <div class="col-md-12 options" v-if="options">
       <div class="col-md-3 text-center">
         <a class="btn btn-lg btn-block btn-default">
           <i class="fa fa-refresh"></i> <br>
@@ -67,4 +67,8 @@ export default {
 
 <style scoped>
 a { cursor: pointer!important; }
+
+.options > div {
+  margin: 15px auto;
+}
 </style>
