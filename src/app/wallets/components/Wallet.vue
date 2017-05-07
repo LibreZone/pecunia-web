@@ -10,7 +10,7 @@ export default {
   <div class="col-md-6">
     <b-panel type="default" has-footer>
       <template slot="heading">
-        <img src="https://i.imgur.com/RNPOgiU.jpg" class="pull-left" />
+        <img src="https://raw.githubusercontent.com/LibreZone/pecunia/master/wallet%20badges/Outros.jpg" class="pull-left" />
         <span>
           Nome da conta (Categoria)
           <br /> <b>R$1234.56</b>

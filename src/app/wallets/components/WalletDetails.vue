@@ -18,7 +18,7 @@ export default {
             <router-link :to="{ name: 'wallets' }" class="btn btn-xs btn-default" exact>voltar</router-link>
           </div>
           <div class="col-xs-8 text-center">
-            <img src="https://i.imgur.com/RNPOgiU.jpg" />
+            <img src="https://raw.githubusercontent.com/LibreZone/pecunia/master/wallet%20badges/Outros.jpg" />
             <balance :amount="1234.56" about="saldo da conta {NOME DA CONTA}" />
           </div>
           <div class="col-xs-2 text-right">

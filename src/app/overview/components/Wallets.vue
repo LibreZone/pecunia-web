@@ -6,9 +6,9 @@ export default {
   data () {
     return {
       wallets: [
-        { type: 'Outros', img: 'https://i.imgur.com/RNPOgiU.jpg', name: 'Conta inicial', amount: 1234.56 },
-        { type: 'Outros', img: 'https://i.imgur.com/ujQUSMT.jpg', name: 'Carteira', amount: 1234.56 },
-        { type: 'Conta corrente', img: 'https://i.imgur.com/Esit7LG.jpg', name: 'Banco do Brasil', amount: 1234.56 }
+        { type: 'Outros', img: 'https://raw.githubusercontent.com/LibreZone/pecunia/master/wallet%20badges/Outros.jpg', name: 'Conta inicial', amount: 1234.56 },
+        { type: 'Outros', img: 'https://raw.githubusercontent.com/LibreZone/pecunia/master/wallet%20badges/Carteira.jpg', name: 'Carteira', amount: 1234.56 },
+        { type: 'Conta corrente', img: 'https://raw.githubusercontent.com/LibreZone/pecunia/master/wallet%20badges/Banco%20do%20Brasil%20S.A.jpg', name: 'Banco do Brasil', amount: 1234.56 }
       ]
     }
   }
