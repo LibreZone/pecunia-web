@@ -9,7 +9,7 @@ export default {
 
 <template>
   <div>
-    <b-modal ref="transactionDespesaModal" title="Nova despesa" show><form-transaction /></b-modal>
+    <b-modal ref="transactionDespesaModal" title="Nova despesa"><form-transaction /></b-modal>
     <b-modal ref="transactionReceitaModal" title="Nova receita"><form-transaction /></b-modal>
 
     <b-panel title="Acesso Rápido">
