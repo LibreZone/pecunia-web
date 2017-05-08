@@ -2,7 +2,7 @@
 export default {
   data () {
     return {
-      options: true,
+      options: false,
       addon: {
         repeat: false,
         obs: false,
@@ -55,26 +55,26 @@ export default {
       <a @click.prevent="options = true">+ mais opções</a>
     </div>
     <div class="col-md-12 options" v-if="options">
-      <div class="col-xs-6 col-md-3 text-center" v-if="!addon.repeat" @click.prevent="addon.repeat = true">
-        <a class="btn btn-lg btn-block btn-default">
+      <div class="col-xs-6 col-md-3 text-center" v-if="!addon.repeat">
+        <a class="btn btn-lg btn-block btn-default" @click.prevent="addon.repeat = true">
           <i class="fa fa-refresh"></i> <br>
           repetir
         </a>
       </div>
-      <div class="col-xs-6 col-md-3 text-center" v-if="!addon.obs" @click.prevent="addon.obs = true">
-        <a class="btn btn-lg btn-block btn-default">
+      <div class="col-xs-6 col-md-3 text-center" v-if="!addon.obs">
+        <a class="btn btn-lg btn-block btn-default" @click.prevent="addon.obs = true">
           <i class="fa fa-commenting-o"></i> <br>
           observação
         </a>
       </div>
-      <div class="col-xs-6 col-md-3 text-center" v-if="!addon.tags" @click.prevent="addon.tags = true">
-        <a class="btn btn-lg btn-block btn-default">
+      <div class="col-xs-6 col-md-3 text-center" v-if="!addon.tags">
+        <a class="btn btn-lg btn-block btn-default" @click.prevent="addon.tags = true">
           <i class="fa fa-tag"></i> <br>
           tags
         </a>
       </div>
-      <div class="col-xs-6 col-md-3 text-center" v-if="!addon.files" @click.prevent="addon.files = true">
-        <a class="btn btn-lg btn-block btn-default">
+      <div class="col-xs-6 col-md-3 text-center" v-if="!addon.files">
+        <a class="btn btn-lg btn-block btn-default" @click.prevent="addon.files = true">
           <i class="fa fa-paperclip"></i> <br>
           anexos
         </a>

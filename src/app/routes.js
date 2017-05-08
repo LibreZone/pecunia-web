@@ -1,3 +1,4 @@
+import { routes as auth } from './auth'
 import { routes as overview } from './overview'
 import { routes as transactions } from './transactions'
 import { routes as wallets } from './wallets'
@@ -9,6 +10,7 @@ const defaultRoute = [
 ]
 
 export default [
+  ...auth,
   ...overview,
   ...transactions,
   ...wallets,
