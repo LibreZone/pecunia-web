@@ -1,14 +1,13 @@
 <script>
 import { default as NProgress } from 'vue-nprogress/src/NprogressContainer'
 import { AppNavbar } from '@/components/layout'
+import { mapState } from 'vuex'
 
 export default {
   name: 'app',
   components: { AppNavbar, NProgress },
-  data () {
-    return {
-      isLogged: true
-    }
+  computed: {
+    ...mapState(['Auth'])
   }
 }
 </script>
@@ -16,7 +15,7 @@ export default {
 <template>
     <div id="app">
         <n-progress />
-        <app-navbar v-if="isLogged" />
+        <app-navbar v-if="Auth.isLogged" />
         <div class="container">
             <router-view></router-view>
         </div>
