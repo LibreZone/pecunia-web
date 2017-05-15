@@ -4,14 +4,19 @@ import { AppNavbar } from '@/components/layout'
 
 export default {
   name: 'app',
-  components: { AppNavbar, NProgress }
+  components: { AppNavbar, NProgress },
+  data () {
+    return {
+      isLogged: false
+    }
+  }
 }
 </script>
 
 <template>
     <div id="app">
         <n-progress />
-        <app-navbar />
+        <app-navbar v-if="isLogged" />
         <div class="container">
             <router-view></router-view>
         </div>
