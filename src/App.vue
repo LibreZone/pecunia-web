@@ -7,7 +7,7 @@ export default {
   components: { AppNavbar, NProgress },
   data () {
     return {
-      isLogged: false
+      isLogged: true
     }
   }
 }
