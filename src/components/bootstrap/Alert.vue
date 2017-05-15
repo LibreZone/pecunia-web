@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-  <div class="alert alert-dismissible text-uppercase text-center" :class="'alert-'+type">
+  <div class="alert alert-dismissible text-uppercase" :class="'alert-'+type">
     <button type="button" class="close" data-dismiss="alert">&times;</button>
     <slot>{{ msg }}</slot>
   </div>
